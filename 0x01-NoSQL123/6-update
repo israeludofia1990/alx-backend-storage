@@ -1,0 +1,8 @@
+// Update the document
+result = db.school.updateMany(
+    { name: "Holberton school" },
+    { $set: { address: "972 Mission street" } }
+);
+
+// Print the result of the update operation
+print("WriteResult({ \"nMatched\" : " + result.matchedCount + ", \"nUpserted\" : " + result.upsertedCount + ", \"nModified\" : " + result.modifiedCount + " })");
